@@ -7,12 +7,25 @@
 }
 
 main {
-  margin: 0 7.5%;
+  padding: 2.5% 7.5%;
+  line-height: 2.5;
 }
+
+p {
+  font-family: "Ubuntu";
+}
+
+h2,
+h1,
+a {
+  font-family: "Permanent Marker";
+}
+
+/********** FONTS **********/
 
 /********** MOBIL (og mindre) **********/
 
-/** Burgermenu **/
+/** Header/Burgermenu **/
 
 body {
   font-family: Arial, sans-serif;
@@ -23,6 +36,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 100px;
+  padding: 0 7.5%;
+  font-weight: bold;
 }
 nav .main_menu {
   display: flex;
@@ -74,6 +90,7 @@ nav .logo {
   cursor: pointer;
   text-transform: uppercase;
 }
+
 @media (max-width: 800px) {
   nav .main_menu {
     height: 100vh;
@@ -117,7 +134,7 @@ body {
 }
 footer {
   width: 100%;
-  position: fixed;
+  position: relative;
   bottom: 0;
   background: rgb(21, 22, 26);
   display: flex;
@@ -207,3 +224,5 @@ footer {
 }
 
 /********** WEB **********/
+
+/** Header/Burgermenu **/
