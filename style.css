@@ -8,11 +8,26 @@
 
 main {
   padding: 2.5% 7.5%;
-  line-height: 2.5;
+}
+
+main a,
+main a:visited {
+  color: #ffa31a;
+}
+
+main a:hover {
+  color: black;
 }
 
 p {
   font-family: "Ubuntu";
+  line-height: 2.5;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 2.5%;
 }
 
 h2,
