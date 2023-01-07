@@ -140,6 +140,12 @@ nav .logo {
   }
 }
 
+/** Main **/
+.grid_1-1-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
 /** Footer **/
 body {
   font-family: Arial, sans-serif;
