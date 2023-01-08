@@ -22,18 +22,43 @@ main a:hover {
 p {
   font-family: "Ubuntu";
   line-height: 2.5;
+  font-size: 0.9rem;
 }
 
-h1,
-h2,
-h3 {
-  margin-top: 2.5%;
+br {
+  margin-bottom: 2%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.break_small {
+  height: 10px;
+  width: 100%;
+  background-color: #ffa31a;
+  margin: 1% 0;
+}
+
+.break {
+  height: 20px;
+  width: 100%;
+  background-color: #000000;
+  margin: 2% 0;
 }
 
 h2,
 h1,
 a {
   font-family: "Permanent Marker";
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 2.5%;
 }
 
 /********** FONTS **********/
@@ -146,6 +171,14 @@ nav .logo {
   justify-content: space-between;
 }
 
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2.5%;
+}
+
 /** Footer **/
 body {
   font-family: Arial, sans-serif;
@@ -247,3 +280,26 @@ footer {
 /********** WEB **********/
 
 /** Header/Burgermenu **/
+
+/** Main **/
+@media (min-width: 800px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5%;
+  }
+
+  .flexbox_sounds {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .order {
+    order: 1;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
