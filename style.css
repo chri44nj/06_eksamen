@@ -42,7 +42,7 @@ br {
 .break {
   height: 20px;
   width: 100%;
-  background-color: #000000;
+  background-color: black;
   margin: 2% 0;
 }
 
@@ -58,6 +58,10 @@ video {
   height: auto;
   display: block;
   margin-top: 2.5%;
+}
+
+.grid_opgaver img {
+  margin-bottom: 2.5%;
 }
 
 .forside {
@@ -92,6 +96,79 @@ video {
   color: #ffff;
 }
 
+.tekst_forside {
+  margin-top: 10%;
+}
+
+.tekst_forside h2,
+.tekst_forside h3 {
+  text-align: center;
+}
+
+.tekst_forside_1 {
+  font-size: 1.4rem;
+}
+
+.tekst_forside_2 {
+  margin-top: 2.5%;
+  margin-bottom: 15%;
+  font-size: 1rem;
+  font-family: "Permanent Marker";
+  color: #ffa31a;
+}
+
+.tekst_forside_sektion_2 {
+  background-color: black;
+  margin: -2.9% -8.8%;
+}
+
+.tekst_forside_3 {
+  padding: 5% 7.5%;
+  margin-bottom: 10%;
+  color: white;
+  text-align: center;
+}
+
+.grid_opgaver {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.grid_opgaver h2 {
+  font-size: 1rem;
+}
+
+.grid_opgaver p {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.opgaver a {
+  text-decoration: none;
+}
+
+.opgaver a h2:hover {
+  color: #ffa31a;
+  transition: 0.2s ease;
+}
+
+.opgaver a h2 {
+  color: black;
+  list-style: none;
+  transition: 0.2s;
+}
+
+.kursiv {
+  font-style: italic;
+}
+
+.orange {
+  color: #ffa31a;
+}
+
 /********** MOBIL (og mindre) **********/
 
 /** Header/Burgermenu **/
@@ -99,7 +176,7 @@ body {
   font-family: Arial, sans-serif;
 }
 nav {
-  background: rgb(0, 0, 0);
+  background: black;
   color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
@@ -112,6 +189,7 @@ nav .main_menu {
   display: flex;
   list-style: none;
 }
+
 nav .main_menu li a {
   display: inline-block;
   padding-left: 15px;
@@ -121,6 +199,7 @@ nav .main_menu li a {
   font-size: 18px;
   transition: 0.2s ease;
 }
+
 nav .main_menu li a:hover {
   color: #ffa31a;
 }
@@ -237,7 +316,7 @@ footer {
   width: 100%;
   position: relative;
   bottom: 0;
-  background: rgb(21, 22, 26);
+  background: black;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -245,6 +324,11 @@ footer {
   color: #fff;
   padding: 20px;
 }
+
+footer p {
+  font-size: 0.8rem;
+}
+
 .text {
   font-size: 28px;
   font-weight: bold;
@@ -256,13 +340,15 @@ footer {
   display: flex;
   list-style-type: none;
 }
+
 .list-footer li a {
   text-decoration: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: bold;
   padding: 20px;
 }
+
 .list-footer li a:hover {
   color: var(--mycolor);
 }
@@ -270,6 +356,7 @@ footer {
 .social-media {
   margin: 20px auto;
 }
+
 .social-media i {
   padding: 20px;
   font-size: 25px;
@@ -292,49 +379,67 @@ footer {
   color: #c13584;
 }
 
-@media (max-width: 810px) {
+@media (max-width: 800px) {
   .list-footer li a {
     padding: 15px;
-    font-size: 15px;
   }
   .social-media i {
     padding: 10px;
-  }
-}
-@media (max-width: 610px) {
-  .list-footer li a {
-    padding: 10px;
-    font-size: 12px;
-  }
-  .social-media i {
-    font-size: 15px;
-  }
-}
-@media (max-width: 470px) {
-  .text {
-    font-size: 12px;
-  }
-  .list-footer li a {
-    padding: 5px;
-  }
-}
-@media (max-width: 330px) {
-  .text {
-    font-size: 10px;
   }
 }
 
 /********** WEB **********/
-
-/** Header/Burgermenu **/
-
-/** Main **/
 @media (min-width: 800px) {
+  /** Header/Burgermenu **/
+  nav .main_menu li a {
+    font-size: 1.5rem;
+  }
+
+  /** Main **/
+
   .grid_1-1-1 {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     justify-content: center;
     align-items: center;
+    margin-top: 10%;
+  }
+
+  .tekst_forside_1 {
+    font-size: 2rem;
+    color: white;
+  }
+
+  .tekst_forside_2 {
+    font-size: 1.5rem;
+  }
+
+  .tekst_forside_sektion_2 {
+    background-color: black;
+    margin: -2.9% -8.8%;
+  }
+
+  .tekst_forside_3 {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+  }
+
+  .grid_opgaver {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .grid_opgaver h2 {
+    font-size: 3rem;
+  }
+
+  .grid_opgaver p {
+    font-size: 1.3rem;
+    font-weight: bold;
   }
 
   .overskrift {
@@ -382,5 +487,15 @@ footer {
 
   .order {
     order: 1;
+  }
+
+  /** Footer **/
+
+  .list-footer li a {
+    font-size: 1.5rem;
+  }
+
+  footer p {
+    font-size: 1rem;
   }
 }
