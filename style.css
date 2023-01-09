@@ -60,10 +60,41 @@ video {
   margin-top: 2.5%;
 }
 
+.forside {
+  background-image: url(andet/forside.png);
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  width: 50%;
+  aspect-ratio: 1/1;
+}
+
+.logo_hover {
+  display: none;
+}
+
+.overskrift {
+  font-size: 3rem;
+  color: #ffa31a;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: black;
+}
+
+.hover {
+  transition: 5s;
+}
+
+.hover:hover {
+  transition: 0s ease-in-out;
+  color: #ffff;
+}
+
 /********** MOBIL (og mindre) **********/
 
 /** Header/Burgermenu **/
-
 body {
   font-family: Arial, sans-serif;
 }
@@ -83,7 +114,7 @@ nav .main_menu {
 }
 nav .main_menu li a {
   display: inline-block;
-  padding: 15px;
+  padding-left: 15px;
   text-decoration: none;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
@@ -122,8 +153,7 @@ nav .main_menu .close_menu,
   color: #c13584;
 }
 
-nav .logo {
-  margin: 6px;
+nav .headline {
   cursor: pointer;
   text-transform: uppercase;
 }
@@ -165,7 +195,9 @@ nav .logo {
 /** Main **/
 .grid_1-1-1 {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .flexbox {
@@ -298,10 +330,48 @@ footer {
 
 /** Main **/
 @media (min-width: 800px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: center;
+    align-items: center;
+  }
+
+  .overskrift {
+    font-size: 6.5rem;
+  }
+
+  .logo_hover {
+    width: 50%;
+    aspect-ratio: 1/1;
+    opacity: 0;
+    z-index: 2;
+    transition: 1s;
+    display: block;
+  }
+
+  .logo_hover:hover {
+    transition: 1s;
+    opacity: 1;
+  }
+
+  .flex_overskrift {
+    display: flex;
+    justify-content: end;
+  }
+
   .grid_1-1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.5%;
+  }
+
+  .flexbox {
+    position: relative;
+  }
+
+  .flexbox img {
+    position: absolute;
   }
 
   .flexbox_sounds {
