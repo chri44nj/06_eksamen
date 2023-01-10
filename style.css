@@ -32,6 +32,10 @@ br {
   font-weight: bold;
 }
 
+.pm {
+  font-family: "Permanent Marker";
+}
+
 .break_small {
   height: 10px;
   width: 100%;
@@ -127,6 +131,35 @@ video {
   margin-bottom: 10%;
   color: white;
   text-align: center;
+}
+
+.tekst_christian_1 {
+  font-size: 1.6rem;
+}
+
+.tekst_christian_2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.tekst_christian_3 {
+  font-family: "Ubuntu";
+}
+
+.tekst_christian_4 {
+  font-family: "Permanent Marker";
+}
+
+.grid_1-1 ul li {
+  font-family: "Ubuntu";
+  line-height: 2.5;
+  list-style-type: none;
+  font-size: 0.9rem;
+}
+
+.grid_1-1 ul li i {
+  color: #ffa31a;
 }
 
 .grid_opgaver {
@@ -237,40 +270,6 @@ nav .headline {
   text-transform: uppercase;
 }
 
-@media (max-width: 800px) {
-  nav .main_menu {
-    height: 100vh;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    z-index: 10;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: rgb(0, 0, 0);
-    transition: top 1s ease 0s;
-    display: none;
-  }
-  nav .main_menu .close_menu {
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-  nav .open_menu {
-    display: block;
-  }
-  nav .main_menu li a:hover {
-    background: none;
-    color: #ffa31a;
-  }
-  .icons i {
-    display: inline-block;
-    padding: 12px;
-  }
-}
-
 /** Main **/
 .grid_1-1-1 {
   display: flex;
@@ -287,31 +286,32 @@ nav .headline {
   margin-top: 2.5%;
 }
 
-@media (max-width: 800px) {
-  h2 {
-    font-size: 1.2rem;
-  }
+h2 {
+  font-size: 1.2rem;
+}
 
-  .bold {
-    font-size: 1rem;
-  }
+.bold {
+  font-size: 1rem;
+}
 
-  a {
-    font-size: 1rem;
-  }
+a {
+  font-size: 1rem;
+}
 
-  p {
-    font-size: 0.9rem;
-  }
+p {
+  font-family: "Ubuntu";
+  font-size: 0.9rem;
+}
+
+.grid_1-1 ul li {
+  font-size: 1rem;
 }
 
 /** Footer **/
 body {
   font-family: Arial, sans-serif;
 }
-:root {
-  --mycolor: #ffa31a;
-}
+
 footer {
   width: 100%;
   position: relative;
@@ -350,7 +350,7 @@ footer p {
 }
 
 .list-footer li a:hover {
-  color: var(--mycolor);
+  color: #ffa31a;
 }
 
 .social-media {
@@ -385,6 +385,46 @@ footer p {
   }
   .social-media i {
     padding: 10px;
+  }
+
+  h2 {
+    margin-bottom: 5%;
+  }
+
+  nav .main_menu {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    transition: top 1s ease 0s;
+    display: none;
+  }
+  nav .main_menu .close_menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .open_menu {
+    display: block;
+  }
+  nav .main_menu li a:hover {
+    background: none;
+    color: #ffa31a;
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+
+  .tekst_christian_4 {
+    margin-top: 10%;
   }
 }
 
@@ -423,6 +463,23 @@ footer p {
     font-size: 1.5rem;
     color: white;
     text-align: center;
+  }
+
+  .tekst_christian_1 {
+    font-size: 1.8rem;
+  }
+
+  .tekst_christian_2 {
+    font-size: 4rem;
+    margin-bottom: 1%;
+  }
+
+  .tekst_christian_3 {
+    font-size: 1.5rem;
+  }
+
+  .tekst_christian_4 {
+    font-size: 2.5rem;
   }
 
   .grid_opgaver {
@@ -471,6 +528,10 @@ footer p {
     gap: 2.5%;
   }
 
+  .center {
+    align-items: center;
+  }
+
   .flexbox {
     position: relative;
   }
@@ -487,6 +548,14 @@ footer p {
 
   .order {
     order: 1;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
   }
 
   /** Footer **/

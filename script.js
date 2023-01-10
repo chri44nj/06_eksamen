@@ -6,7 +6,6 @@ const menu_items = document.querySelectorAll("nav .main_menu li a");
 open_menu.addEventListener("click", show);
 close_menu.addEventListener("click", close);
 
-// close menu when you click on a menu item
 menu_items.forEach((item) => {
   item.addEventListener("click", function () {
     close();
