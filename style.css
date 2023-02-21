@@ -262,6 +262,7 @@ nav .open_menu {
   display: none;
   cursor: pointer;
 }
+
 nav .main_menu .close_menu,
 .icons i {
   font-size: 2rem;
@@ -414,7 +415,7 @@ footer p {
     justify-content: center;
     align-items: center;
     background: rgb(0, 0, 0);
-    transition: top 1s ease 0s;
+    transition-duration: 0.5s;
     display: none;
   }
   nav .main_menu .close_menu {
